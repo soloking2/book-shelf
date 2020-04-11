@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle%></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+  <header class="navbar navbar-expand-sm navbar-light fixed-top navbar-bright" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="/" class="navbar-brand">Home</a>
+      </div>
+      <nav class="collapse navbar-collapse" role="navigation">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="/books" class="nav-link">Books</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Author</a>
+          </li>
+        
+        </ul>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="/auth/logout" class="nav-link">Logout</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+            <ul class="dropdown-menu" style="padding:12px;">
+              <form class="form-inline">
+                <button type="submit" class="btn btn-light float-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control float-left" placeholder="Search">
+              </form>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+      
+      <div id="masthead">  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1><%= pageTitle %>
+                <p class="lead"></p>
+              </h1>
+            </div>
+            <div class="col-md-5">
+              <div class="card card-lg"> 
+                <div class="row">
+                  <div class="col-sm-12">
+                    
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div><!-- /cont -->
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="top-spacer"> </div>
+            </div>
+          </div> 
+        </div><!-- /cont -->
+        
+      </div>
+      
+      
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-12"> 
+            
+            <div class="panel" id="topPanel">
+              <div class="panel-body form-c">
+                
+                
+                
+                <!--/stories-->
+                <div class="row">    
+                  <br>
+                  <form action="/auth/signin" method="POST">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="name">Username</label>
+                          <input type="text" class="form-control" required name="username" id="name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="text" class="form-control" required name="password" id="password">
+                        </div>
+                      </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </form>
+                </div>
+                <hr>
+                <h3><span><a href="/"> Signup</a> if you don't have an account</span></h3>
+                
+                
+  
+                <!--/stories-->
+                
+                
+              </div>
+            </div>
+                                                                                             
+                                                          
+                                                            
+             </div><!--/col-12-->
+        </div>
+      </div>
+                                                      
+                                                                                      
+      <hr>
+      
+      <div class="container" id="footer">
+        <div class="row">
+          <div class="col col-sm-12">
+            
+            <h1>Follow Us</h1>
+            <div class="btn-group">
+             <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+             <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+             <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <hr>
+      
+      <hr>
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <ul class="list-inline">
+                <li><i class="icon-facebook icon-2x"></i></li>
+                <li><i class="icon-twitter icon-2x"></i></li>
+                <li><i class="icon-google-plus icon-2x"></i></li>
+                <li><i class="icon-pinterest icon-2x"></i></li>
+              </ul>
+              
+            </div>
+            <div class="col-sm-6">
+                <p class="pull-right">Built by <a href="https://umehsolomon-2.web.app">Umeh Solomon</a></p>      
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
